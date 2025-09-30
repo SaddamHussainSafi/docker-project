@@ -16,7 +16,7 @@ jobs:
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
-          java-version: '21'   # changed from 17 or 25 → use 21 (LTS and stable)
+          java-version: '21'   # newchanged from 17 or 25 → use 21 (LTS and stable)
           distribution: 'temurin'
           cache: maven
 
