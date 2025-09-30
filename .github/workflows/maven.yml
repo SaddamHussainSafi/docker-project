@@ -33,3 +33,9 @@ jobs:
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker image
+        run: docker build -t saddam992/calculation:latest .
+
+      - name: Push Docker image
+        run: docker push saddam992/calculation:latest
